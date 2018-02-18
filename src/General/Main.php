@@ -1,11 +1,27 @@
 <?php
 
-namespace MarkusGehrig\Pir_Camera\General;
+namespace MarkusGehrig\PirCamera\General;
 
-class Main {
+use MarkusGehrig\PirCamera\Templating\View;
+
+public class Main {	
 	
-	function __construct() {
+	protected $view;
 
-		echo "Hallo";
+	public function __construct() {
+		
 	}
+
+	public function dispatcher() {
+		
+	}
+
+	public function view() {
+		$this->view = new View();
+	}
+
+	private function changeView(){
+		
+	}
+
 } 
