@@ -4,7 +4,7 @@ This program is part of my HF apprenticeship.
 
 ## What does it do
 
-It's a camera based on a RasberryPI, which use a pir module a trigger.
+It's a camera based on a RasberryPI, which use a pir module as a trigger.
 
 This Package include following functions for the RasberryPi.
 
