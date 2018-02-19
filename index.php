@@ -10,8 +10,10 @@
 
 require __DIR__.'/vendor/autoload.php';
 
-use MarkusGehrig\Pir_Camera\General\Main;
+use MarkusGehrig\PirCamera\General\Main;
 
 $main = new Main();
+
+echo("index.php");
 
 

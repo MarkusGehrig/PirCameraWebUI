@@ -7,13 +7,13 @@ use Symfony\Component\Filesystem\Exception\IOExceptionInterface;
 
 use Symfony\Component\Finder\Finder;
 
-public class File {
+class File {
 	
-	public __construct() {
-
+	public function __construct() {
+		return $this;
 	}
 
-	public getFileList($folder) {
+	public function getFileList($folder) {
 		// Instance Finder Object every time when FileList is called. 
 		$finder = new Finder();
 		$files = $finder->files()->in($folder);
@@ -21,7 +21,7 @@ public class File {
 		return $files;
 	}
 
-	public deleteFile($path) {
+	public function deleteFile($path) {
 		$filesystem = new Filesystem();
 		$filesystem->remove($path);
 	}

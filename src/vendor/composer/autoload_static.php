@@ -20,11 +20,34 @@ class ComposerStaticInit6fe70a8a214a871e770630d10c30a594
         ),
     );
 
+    public static $classMap = array (
+        'Symfony\\Component\\Templating\\DelegatingEngine' => __DIR__ . '/..' . '/symfony/templating/DelegatingEngine.php',
+        'Symfony\\Component\\Templating\\EngineInterface' => __DIR__ . '/..' . '/symfony/templating/EngineInterface.php',
+        'Symfony\\Component\\Templating\\Helper\\Helper' => __DIR__ . '/..' . '/symfony/templating/Helper/Helper.php',
+        'Symfony\\Component\\Templating\\Helper\\HelperInterface' => __DIR__ . '/..' . '/symfony/templating/Helper/HelperInterface.php',
+        'Symfony\\Component\\Templating\\Helper\\SlotsHelper' => __DIR__ . '/..' . '/symfony/templating/Helper/SlotsHelper.php',
+        'Symfony\\Component\\Templating\\Loader\\CacheLoader' => __DIR__ . '/..' . '/symfony/templating/Loader/CacheLoader.php',
+        'Symfony\\Component\\Templating\\Loader\\ChainLoader' => __DIR__ . '/..' . '/symfony/templating/Loader/ChainLoader.php',
+        'Symfony\\Component\\Templating\\Loader\\FilesystemLoader' => __DIR__ . '/..' . '/symfony/templating/Loader/FilesystemLoader.php',
+        'Symfony\\Component\\Templating\\Loader\\Loader' => __DIR__ . '/..' . '/symfony/templating/Loader/Loader.php',
+        'Symfony\\Component\\Templating\\Loader\\LoaderInterface' => __DIR__ . '/..' . '/symfony/templating/Loader/LoaderInterface.php',
+        'Symfony\\Component\\Templating\\PhpEngine' => __DIR__ . '/..' . '/symfony/templating/PhpEngine.php',
+        'Symfony\\Component\\Templating\\Storage\\FileStorage' => __DIR__ . '/..' . '/symfony/templating/Storage/FileStorage.php',
+        'Symfony\\Component\\Templating\\Storage\\Storage' => __DIR__ . '/..' . '/symfony/templating/Storage/Storage.php',
+        'Symfony\\Component\\Templating\\Storage\\StringStorage' => __DIR__ . '/..' . '/symfony/templating/Storage/StringStorage.php',
+        'Symfony\\Component\\Templating\\StreamingEngineInterface' => __DIR__ . '/..' . '/symfony/templating/StreamingEngineInterface.php',
+        'Symfony\\Component\\Templating\\TemplateNameParser' => __DIR__ . '/..' . '/symfony/templating/TemplateNameParser.php',
+        'Symfony\\Component\\Templating\\TemplateNameParserInterface' => __DIR__ . '/..' . '/symfony/templating/TemplateNameParserInterface.php',
+        'Symfony\\Component\\Templating\\TemplateReference' => __DIR__ . '/..' . '/symfony/templating/TemplateReference.php',
+        'Symfony\\Component\\Templating\\TemplateReferenceInterface' => __DIR__ . '/..' . '/symfony/templating/TemplateReferenceInterface.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit6fe70a8a214a871e770630d10c30a594::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit6fe70a8a214a871e770630d10c30a594::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit6fe70a8a214a871e770630d10c30a594::$classMap;
 
         }, null, ClassLoader::class);
     }

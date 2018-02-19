@@ -1,8 +1,8 @@
 <?php
 
-namespace MarkusGehrig/PirCamera/General;
+namespace MarkusGehrig\PirCamera\General;
 
-public class Dispatcher {
+class Dispatcher {
 	
 	public function __construct(){
 
