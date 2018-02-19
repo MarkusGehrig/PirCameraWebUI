@@ -14,6 +14,4 @@ use MarkusGehrig\PirCamera\General\Main;
 
 $main = new Main();
 
-echo("index.php");
-
 

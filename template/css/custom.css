@@ -1,0 +1,36 @@
+body {
+	padding: 0;
+	margin: 0;
+
+	background: #010101;
+	color: #ffffff;
+
+	font-family: 'Roboto', sans-serif;
+
+}
+
+
+main {
+	width: 900px;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	padding-top: 20px;
+
+}
+
+.pictures {
+
+}
+
+.picture {
+	display: inline;
+	
+}
+
+.picture img{
+	width: 33.33333333%;
+	height: auto; 
+	
+}

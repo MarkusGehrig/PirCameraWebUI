@@ -10,7 +10,7 @@ class DashboardController extends View {
 	private $files;
 
 	public function __construct() {
-		echo("DashboardController");
+		
 	}
 
 	public function getFiles() {
@@ -18,7 +18,6 @@ class DashboardController extends View {
 	}
 
 	public function setUp($folder) {
-		echo("setUp");
 
 		$file = new File();
 		$this->files = $file->getFileList($folder);	

@@ -8,7 +8,6 @@ use MarkusGehrig\PirCamera\Controller\DashboardController;
 class Main {	
 
 	public function __construct() {
-		echo("Main Class");
 
 		$this->view();
 
@@ -20,8 +19,6 @@ class Main {
 	}
 
 	public function view() {
-
-		echo("Main::View");
 
 		$dashboardController = new DashboardController();
 

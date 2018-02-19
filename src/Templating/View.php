@@ -48,6 +48,5 @@ class View {
 
 		echo $templating->render($this->getTemplate(), $this->getData());
 		
-		print_r($this->data);
 	}
 }
