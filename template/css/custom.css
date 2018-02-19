@@ -21,16 +21,17 @@ main {
 }
 
 .pictures {
-
+	margin: -5px;
 }
 
 .picture {
-	display: inline;
-	
+	width: calc(33.333333333% - 10px);
+	display: inline-block;
+	padding: 5px;
 }
 
 .picture img{
-	width: 33.33333333%;
+	width: 100%;
 	height: auto; 
 	
 }

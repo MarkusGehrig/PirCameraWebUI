@@ -16,7 +16,7 @@ class File {
 	public function getFileList($folder) {
 		// Instance Finder Object every time when FileList is called. 
 		$finder = new Finder();
-		$files = $finder->files()->in($folder);
+		$files = $finder->files()->in($folder)->name("*.jpg");
 
 		return $files;
 	}
